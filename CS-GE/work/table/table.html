@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Table</title>
+
+    <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  
+      <p style="font-size: larger;">TABLE</p>
+        <hr style="height: 2px ; color: black; ">
+        <div class="cont">
+        <table>
+            <tr>
+                <th colspan="4" style="background-color: yellow;">Seminar</th>
+            </tr>
+            <tr>
+                <th rowspan="2" style="background-color: rgb(241, 166, 138);">Day</th>
+                <th colspan="2" style="background-color: lightblue;">Schedule</th>
+                <th rowspan="2" style="background-color: rgb(115, 199, 115);">Topic</th>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(235, 190, 139);">Start Time</th>
+                <th style="background-color: rgb(235, 190, 139)">End Time</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00AM</td>
+                <td rowspan="2">5:00PM</td>
+                <td>Introduction to HTML</td>
+            </tr>
+            <tr>
+                <td>Important HTML Tags</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00AM</td>
+                <td>11:00AM</td>
+                <td rowspan="2">CSS-1</td>
+            </tr>
+            <tr>
+                <td>11:00AM</td>
+                <td>2:00PM</td>
+            </tr>
+            <tr>
+                <td>2:00PM</td>
+                <td>5:00PM</td>
+                <td>JavaScript-1</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00AM</td>
+                <td>12 Noon</td>
+                <td>JavaScript-2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Thursday</td>
+                <td>8:00AM</td>
+                <td>12 Noon</td>
+                <td>JQuery</td>
+            </tr>
+            <tr>
+                <td>1:00PM</td>
+                <td>3:00PM</td>
+                <td id="celllogo">Valedictory</td>
+            </tr>
+        </table>
+</body>
+
+</html>

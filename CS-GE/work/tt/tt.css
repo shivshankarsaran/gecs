@@ -1,0 +1,26 @@
+body{
+	text-align:center;
+}
+
+th{
+			background-color:gray;
+			color:blue;
+	        text-align:center;
+			border:0.5px solid;       
+		}
+#vertical{
+			writing-mode:vertical-rl;
+			text-orientation:revert-layer;
+			background-color:gray;
+		}
+td{
+			text-align:center;
+			border:0.5px solid;
+}
+
+table{
+	border: 1px;
+	border-style: solid;
+	text-align:center;
+	margin:auto;
+}

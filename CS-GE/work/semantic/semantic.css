@@ -1,0 +1,47 @@
+body{
+    background-image:url("/images/back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    height:10vh;
+}
+nav {
+    border: 10px;
+    background-color: green;
+    padding: 6px;
+    border-style: double;
+    text-align: center;
+}
+
+nav>a {
+    text-decoration:dotted;
+    color: rgb(192, 9, 9);
+    font-size: 20px;
+}
+
+main{
+    height:80vh;
+}
+
+section{
+    background-color: aquamarine;
+    text-decoration:line-through;
+    border-radius: 5%;
+    border-style: ridge;
+}
+figure{
+    background-size:cover;
+    border:20%;
+    border-style:double;
+}
+
+footer{
+    height:10vh;
+    background-color: rgb(121, 24, 239);
+    height:8vh;
+    display:flex;
+    justify-content: space-around;
+    color:rgb(171, 245, 0);
+}

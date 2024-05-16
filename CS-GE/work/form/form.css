@@ -1,0 +1,32 @@
+table {
+    font-family: verdana;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    background: url('/images/back.jpg');
+    border-collapse: collapse;
+    border: 4px solid greenyellow;
+    background-size: cover;
+
+}
+
+table.inner {
+    border: 10px
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    width: 50%;
+    padding: 6px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit],
+input[type=reset] {
+    width: 15%;
+    padding: 8px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}

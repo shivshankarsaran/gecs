@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON </h2>
+
+<p id="para"></p>
+
+<script>
+let stud = '{"students":['+'{"firstName":"shiv","lastName":"last" },' +'{"firstName":"shiv","lastName":"first-last" },' +
+'{"firstName":"last","lastName":"third" }]}';
+
+const obj = JSON.parse(stud);
+document.getElementById("para").innerHTML =
+obj.stud[1].firstName + " " + obj.stud[1].lastName;
+</script>
+
+</body>
+</html>

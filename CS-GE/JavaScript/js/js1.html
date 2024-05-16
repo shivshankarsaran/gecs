@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><strong>Weekend checker effect using JS but will not check here</strong><b>OK.</b></h1>
+    <input type="date" id="dc" /><br><br>
+    <button id="btn">
+        <h1>CHECK</h1>
+    </button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            document.getElementById("dc").addEventListener("change", function () {
+                alert("The text has been changed.");
+            });
+            document.getElementById("dc").addEventListener("focus", function () {
+                document.body.style.backgroundColor = "blue";
+            });
+
+
+            document.getElementById("dc").addEventListener("focusout", function () {
+                document.body.style.backgroundColor = "white";
+            });
+
+
+            document.getElementById("btn").addEventListener("click", function () {
+                console.log("you clicked button")
+            });
+        });
+    </script>
+
+    <div id="result"></div>
+</body>
+
+</html>

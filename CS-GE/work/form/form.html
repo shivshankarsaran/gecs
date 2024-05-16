@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body bgcolor="blue">
+    <form action="thanks.html">
+
+        <h1><b><i><u>
+                        <font color='pink'>
+                            <center>Student Registration Form by SHIV SHANKAR SARAN</center>
+                    </u></font></i></b></h1>
+        <table align="center" cellpadding="10">
+            <!--------------------- First Name ------------------------------------------>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="FirstName" maxlength="500" placeholder="First name" />
+                </td>
+            </tr>
+            <!------------------------ Last Name --------------------------------------->
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="LastName" maxlength="500" placeholder="Last name" />
+                </td>
+            </tr>
+            <!-------------------------- Email ID ------------------------------------->
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" name="EmailID" maxlength="200" placeholder="abcd@gmail.com" /></td>
+            </tr>
+            <!-------------------------- Mobile Number ------------------------------------->
+            <tr>
+                <td>Mobile Number</td>
+                <td>
+                    <input type="text" name="MobileNumber" maxlength="10" placeholder="1234567890" />
+
+                </td>
+            </tr>
+            <!---------------------- Gender ------------------------------------->
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="Gender" value="Male" />
+                    Male
+                    <input type="radio" name="Gender" value="Female" />
+                    Female
+                </td>
+            </tr>
+            <!--------------------------Course----------------------------------->
+            <tr>
+                <td>Select your course</td>
+                <td>
+                    <select name="course" id="course">
+                        <option value="Course">select course</option>
+                        <option value="maths">Bsc Mtahematics honours</option>
+                        <option value="physics">Bsc Physics honours</option>
+                        <option value="chemistry">Bsc Chemistry honours</option>
+                        <option value="cs">Bsc Computer science honours</option>
+                        <option value="bap">Ba program</option>
+                        <option value="bscphysical">Bsc physical science</option>
+                        <option value="others">Others</option>
+
+                    </select>
+                </td>
+            </tr>
+            <!------------------------- Address ---------------------------------->
+            <tr>
+                <td>Address<br /><br /><br /></td>
+                <td><textarea name="Address" rows="5  " cols="50"></textarea></td>
+            </tr>
+
+
+            <!---------------------Marks----------------------------------------->
+            <tr>
+                <td>12th percentage <br /><br /><br /></td>
+                <td>
+                    <br />
+                    <input type="checkbox" name="more90" value="more90" />
+                    >90<br>
+                    <input type="checkbox" name="more80" value="more80" />
+                    >80<br />
+                    <input type="checkbox" name="less80" value="less80" />
+                    <80 <br />
+
+                </td>
+            </tr>
+
+            <!----------------------- Submit and Reset ------------------------------->
+            <tr>
+                <td colspan="5" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

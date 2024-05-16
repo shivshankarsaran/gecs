@@ -1,0 +1,23 @@
+table {
+    border-spacing: 10px;
+    /* background-image: url("../../images/back.jpg"); */
+    /* background-color: aqua; */
+    background-image:url("back.jpg");
+    background-size: cover;
+}
+td,th {
+    text-align: center;
+    padding: 5px;
+    border: 2px solid rgb(25, 10, 241);
+    /* margin:50px; */
+}
+
+.cont{
+    width:30vw;
+    border-width: 10px;
+    border-style: outset;
+}
+#celllogo{
+    background-image:url("/images/back.jpg");
+    background-size: cover;
+}

@@ -1,0 +1,69 @@
+
+<html>
+<head>
+<title>Events</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // Blur event
+        $('#inputBlur').blur(function(){
+            $('#blurMessage').text('blurred!');
+        });
+
+        // Change event
+        $('#inputChange').change(function(){
+            $('#changeMessage').text('Input changed: ' + $(this).val());
+        });
+
+        // Focus event
+        $('#inputFocus').focus(function(){
+            $('#focusMessage').text('Input focused!');
+        });
+
+        // Click event
+        $('#clickButton').click(function(){
+            $('#clickMessage').text('Button clicked!');
+        });
+
+        // Double click event
+        $('#doubleClickText').dblclick(function(){
+            $('#doubleClickMessage').text('Text double-clicked!');
+        });
+
+        // Submit event
+        $('#submitButton').click(function(){
+            $('#submitMessage').text('Form submitted!');
+            return false; // Prevent form submission for demonstration
+        });
+    });
+</script>
+</head>
+<body>
+    <h1>Events</h1>
+
+    <label for="inputBlur">Blur Event:</label>
+    <input type="text" id="inputBlur">
+    <p id="blurMessage"></p>
+
+    <label for="inputChange">Change Event:</label>
+    <input type="text" id="inputChange">
+    <p id="changeMessage"></p>
+
+    <label for="inputFocus">Focus Event:</label>
+    <input type="text" id="inputFocus">
+    <p id="focusMessage"></p>
+
+    <button id="clickButton">Click Event</button>
+    <p id="clickMessage"></p>
+
+    <p id="doubleClickText">Double Click Event</p>
+    <p id="doubleClickMessage"></p>
+
+    <form id="submitForm">
+        <label for="inputSubmit">Submit Event:</label>
+        <input type="text" id="inputSubmit">
+        <button id="submitButton">Submit</button>
+        <p id="submitMessage"></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color on Hover</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<a href="https://www.google.com">Change color</a>
+<p id="para">
+    Double click or single click here    
+</p>
+
+<script>
+    $(document).ready(function() {
+        $('a').css("border","none")
+        $('#para').click(
+            function(){
+                $(this).css('color',"white")
+            }
+        )
+        $('#para').dblclick(
+            function(){
+                $(this).css('color',"green")
+            }
+        )
+        
+        $('a').mouseover(
+            function() {
+                $('body').css('background-color', 'green');
+                $(this).text('I am green now');
+                $(this).css("color","red")
+            })});
+
+            $(document).ready(function() {
+        $('a').mouseout(
+            function() {
+                $('body').css('background-color', 'red');
+                $(this).text('I am red now');
+                $(this).css("color","green")
+            })});
+            
+</script>
+
+</body>
+</html>

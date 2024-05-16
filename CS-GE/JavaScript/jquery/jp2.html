@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1><strong>Jq WEEKEND  </strong><b>CHECKER</b></h1>
+    <input type="date" id="dc"/><br><br>
+    <button class="btn">
+        <h1>CHECK</h1>
+    </button>
+
+    <script>
+      
+        $(document).ready(function() {
+
+            $("input").blur(function(){
+console.log("This input field has lost its blur.");
+});
+
+            $("input").change(function(){
+alert("The text has been changed.");
+})
+            $("input").focus(function(){
+$("body").css("background-color", "blue");
+})
+$("input").focusout(function(){
+$("body").css("background-color", "white");
+})
+            $('.btn').click(function() {
+                let inp = $('#dc').val(); 
+                let d = new Date(inp); 
+                let week = d.getDay(); 
+                
+                if (week == 0 || week == 6) {
+                    $('#result').text("This is a weekend");
+                } else {
+                    $('#result').text("No weekend");
+                }
+            });
+        });
+    </script>
+
+    <div id="result"></div>
+</body>
+</html>
